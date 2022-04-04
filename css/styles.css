@@ -1,0 +1,169 @@
+/* general tags */
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-image: url('../images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 7% 0 0;
+  padding: 0;
+}
+
+h1 {
+  color: #1f2f56;
+}
+
+p {
+  font-size: 1rem;
+  color: #7280a7;
+}
+
+/* card */
+
+.card {
+  background-color: #fff;
+  max-width: 30%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 2px rgba(56, 41, 224, 0.15);
+}
+.card-content {
+  padding: 0 11%;
+}
+
+/* images */
+
+.hero-img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+/* text */
+
+.text-heading {
+  font-size: 1.5rem;
+}
+
+.text-card {
+  padding: 5% 0;
+}
+
+/* price */
+
+.price-tag {
+  background-color: #f5f7ff;
+  border-radius: 5%;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price-description {
+  margin-left: 20px;
+  margin-right: 80px;
+}
+.price-heading {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.price {
+  margin: 0;
+  padding: 0;
+}
+.link {
+  align-content: center;
+  margin-right: 0;
+  font-size: .80rem;
+  font-weight: 700;
+}
+
+
+/* buttons */
+
+.buttons {
+  padding: 7% 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 900;
+}
+.first {
+  background-color: #3829e0;
+  color: #e0e8ff;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px 2px rgba(56, 41, 224, 0.15);
+  margin: 2% 0;
+  cursor: pointer;
+}
+.second {
+  background: none;
+  color: #7280a7;
+  margin: 2% 0;
+}
+.cancel{
+  text-decoration: none;
+  color: #7280a7;
+  font-weight: 700;
+}
+
+/* hover */
+
+input.active:hover {
+  background-color: rgba(56, 41, 224, 0.7);
+  color: #e0e8ff;
+  transition: .2s;
+}
+.active:hover {
+  color: rgba(56, 41, 224, 0.7);
+  transition: .2s;
+}
+a.active:hover {
+  color: #1f2f56;
+  transition: .2s;
+}
+
+/* medias */
+
+@media (min-width: 1251px) and (max-width: 1386px) {
+.price-heading {
+  font-size: .9rem;
+  text-align: left;
+}
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url('../images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1190px) {
+
+  .card {
+    max-width: 350px;
+  }
+
+  .price-description {
+    margin-left: 10px;
+    margin-right: 50px;
+  }
+  .price-heading {
+    font-size: .9rem;
+    text-align: left;
+  }
+}
