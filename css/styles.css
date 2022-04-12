@@ -30,7 +30,7 @@ p {
   max-width: 450px;
 }
 .card-content {
-  padding: 1rem 4rem;
+  padding: 1rem 3rem;
 }
 
 /* images */
@@ -140,9 +140,12 @@ p {
 
 /* medias */
 
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   body {
     background-image: url('../images/pattern-background-mobile.svg');
     background-repeat: no-repeat;
-  }  
+  }
+  .card {
+    margin: 0 20px;
+  }
 }
