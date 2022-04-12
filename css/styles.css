@@ -5,20 +5,19 @@ body {
   background-image: url('../images/pattern-background-desktop.svg');
   background-repeat: no-repeat;
   background-color: #e0e8ff;
+  text-align: center;
+  min-height: 100vh; /** viewport height **/
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin: 7% 0 0;
-  padding: 0;
+  justify-content: center;
 }
 
-h1 {
+h1, h2 {
   color: #1f2f56;
 }
 
 p {
-  font-size: 1rem;
   color: #7280a7;
 }
 
@@ -26,12 +25,12 @@ p {
 
 .card {
   background-color: #fff;
-  max-width: 30%;
   border-radius: 20px;
   box-shadow: 5px 5px 5px 2px rgba(56, 41, 224, 0.15);
+  max-width: 450px;
 }
 .card-content {
-  padding: 0 11%;
+  padding: 1rem 4rem;
 }
 
 /* images */
@@ -40,23 +39,26 @@ p {
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
+.music-logo {
+  margin: 0;
+  padding: 0;
+}
 
 /* text */
 
 .text-heading {
   font-size: 1.5rem;
+  font-weight: 900;
+  padding: 1rem;
 }
 
-.text-card {
-  padding: 5% 0;
-}
 
 /* price */
 
 .price-tag {
   background-color: #f5f7ff;
-  border-radius: 5%;
-  margin: 0;
+  border-radius: 20px;
+  margin: 2rem 0;
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -66,33 +68,30 @@ p {
 }
 
 .price-description {
-  margin-left: 20px;
-  margin-right: 80px;
+  padding: 0 3.5rem 0 0;
+  margin: auto;
 }
 .price-heading {
   font-size: 1rem;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0.3rem;
+  font-weight: 700;
 }
 .price {
   margin: 0;
   padding: 0;
+  text-align: right;
 }
 .link {
   align-content: center;
   margin-right: 0;
-  font-size: .80rem;
+  font-size: 14px;
   font-weight: 700;
+  color: #3829e0;
 }
 
 
 /* buttons */
-
-.buttons {
-  padding: 7% 0;
-  display: flex;
-  flex-direction: column;
-}
 
 .btn {
   width: 100%;
@@ -100,70 +99,50 @@ p {
   border: none;
   border-radius: 10px;
   font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .first {
   background-color: #3829e0;
   color: #e0e8ff;
   text-decoration: none;
   box-shadow: 5px 5px 5px 2px rgba(56, 41, 224, 0.15);
-  margin: 2% 0;
   cursor: pointer;
 }
 .second {
   background: none;
   color: #7280a7;
-  margin: 2% 0;
 }
 .cancel{
   text-decoration: none;
   color: #7280a7;
   font-weight: 700;
+  margin: 1rem 0;
 }
 
 /* hover */
 
-input.active:hover {
-  background-color: rgba(56, 41, 224, 0.7);
+.first:hover {
+  background-color: rgba(56, 41, 224, 0.6);
   color: #e0e8ff;
+  text-decoration: none;
   transition: .2s;
 }
-.active:hover {
-  color: rgba(56, 41, 224, 0.7);
-  transition: .2s;
-}
-a.active:hover {
+.second:hover {
   color: #1f2f56;
+  transition: .2s;
+}
+.link:hover {
+  color: rgba(56, 41, 224, 0.6);
   transition: .2s;
 }
 
 /* medias */
 
-@media (min-width: 1251px) and (max-width: 1386px) {
-.price-heading {
-  font-size: .9rem;
-  text-align: left;
-}
-}
-
 @media (max-width: 375px) {
   body {
     background-image: url('../images/pattern-background-mobile.svg');
     background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: 1190px) {
-
-  .card {
-    max-width: 350px;
-  }
-
-  .price-description {
-    margin-left: 10px;
-    margin-right: 50px;
-  }
-  .price-heading {
-    font-size: .9rem;
-    text-align: left;
-  }
+  }  
 }
