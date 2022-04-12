@@ -40,7 +40,7 @@ p {
   border-radius: 20px 20px 0 0;
 }
 .music-logo {
-  margin: 0;
+  margin-right: 20px;
   padding: 0;
 }
 
@@ -68,8 +68,7 @@ p {
 }
 
 .price-description {
-  padding: 0 3.5rem 0 0;
-  margin: auto;
+  margin-right: auto;
 }
 .price-heading {
   font-size: 1rem;
